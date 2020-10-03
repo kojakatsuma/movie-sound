@@ -37,7 +37,8 @@ module.exports = {
             filename: "./index.html"
         }),
         new CopyPlugin(
-            [{ from: './public/assets', to: './assets' }]
+            [{ from: './public/assets', to: './assets' },
+            { from: './public/models', to: './models' }]
         )
     ]
 };

@@ -19,8 +19,9 @@ import Day20190910 from './components/daies/20190910';
 import Day20190912 from './components/daies/20190912';
 import Day20190913 from './components/daies/20190913';
 import Liquid from './components/Liquid';
-
+import StyleTrans from './components/StyleTrans';
 import { tyuusyouganomosya, araanatakashira, ayamarenaihito, gaynosekkyou, honninnokao, nastarienai, guuzennniyogore } from './constants';
+
 
 export default () => {
     return (
@@ -43,6 +44,9 @@ export default () => {
             </Route>
             <Route path='/liquid'>
                 <Liquid url={guuzennniyogore} />
+            </Route>
+            <Route path='/styletrans'>
+                <StyleTrans />
             </Route>
             <Route path='/20190909' render={props => <Day20190909 {...props} />}></Route>
             <Route path='/20190909' render={props => <Day20190909 {...props} />}></Route>
